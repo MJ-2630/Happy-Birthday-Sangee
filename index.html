@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="birthday-experience">
+
+        <!-- =========================
+             SCENE 1 - OPENING
+        ========================== -->
+
+        <section class="scene scene-opening active" id="openingScene">
+
+            <div class="opening-content">
+                <p>A little surprise awaits you.</p>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SCENE 2 - DARK ROOM
+        ========================== -->
+
+        <section class="scene scene-dark" id="darkScene">
+
+            <div class="dark-content">
+
+                <p class="dark-question">
+                    Why is it so dark in here?
+                </p>
+
+                <p class="dark-subtext">
+                    Maybe it's time to turn the lights on.
+                </p>
+
+                <button class="lights-button" id="lightsButton">
+                    LIGHTS ON
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SCENE 3 - CAKE
+        ========================== -->
+
+
+<section class="scene scene-cake" id="cakeScene">
+
+    <div class="cake-content">
+
+        <p class="cake-intro">
+            Before anything else...
+        </p>
+
+        <div class="cake-wrapper">
+
+            <img
+                src="cake.png"
+                alt="Birthday Cake"
+                class="birthday-cake"
+            >
+
+            <!-- Existing candle is inside the PNG.
+                 This is ONLY the flame. -->
+            <div class="candle-flame" id="candleFlame"></div>
+            <div class="candle-smoke" id="candleSmoke"></div>
+        </div>
+
+        <h1 class="cake-title" id="cakeTitle">
+            Make a Wish
+        </h1>
+
+        <p class="wish-text" id="wishText">
+            Close your eyes and make a wish.
+        </p>
+
+        <button class="blow-button" id="blowButton">
+            BLOW CANDLE
+        </button>
+
+        <div class="wish-granted" id="wishGranted">
+
+            <h2>Wish Granted</h2>
+
+            <p>
+                May this wish find its way to you.
+            </p>
+
+            <button class="continue-button" id="continueButton">
+                CONTINUE
+            </button>
+
+        </div>
+
+        <!-- Celebration particles -->
+        <div class="celebration" id="celebration"></div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     MEMORIES SECTION
+========================= -->
+
+<section class="scene scene-memories" id="memoriesScene">
+
+    <div class="memories-content">
+
+        <p class="memories-kicker">
+            A few moments worth remembering
+        </p>
+
+        <h1 class="memories-title">
+            Our Memories
+        </h1>
+
+        <p class="memories-subtitle">
+            Some moments stay special, no matter how much time passes.
+        </p>
+
+        <div class="memory-counter">
+            <span id="memoryCurrent">01</span>
+            <span class="counter-line"></span>
+            <span>15</span>
+        </div>
+
+        <div class="memory-slider" id="memorySlider">
+
+            <div class="memory-track" id="memoryTrack">
+
+                <div class="memory-card">
+                    <img src="memory-01.jpeg" alt="Memory 01">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-02.jpeg" alt="Memory 02">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-03.jpeg" alt="Memory 03">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-04.jpeg" alt="Memory 04">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-05.jpeg" alt="Memory 05">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-06.jpeg" alt="Memory 06">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-07.jpeg" alt="Memory 07">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-08.jpeg" alt="Memory 08">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-09.jpeg" alt="Memory 09">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-10.jpeg" alt="Memory 10">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-11.jpeg" alt="Memory 11">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-12.jpeg" alt="Memory 12">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-13.jpeg" alt="Memory 13">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-14.jpeg" alt="Memory 14">
+                </div>
+
+                <div class="memory-card">
+                    <img src="memory-15.jpeg" alt="Memory 15">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="memory-dots" id="memoryDots"></div>
+
+        <p class="memory-hint">
+            Swipe to explore
+        </p>
+
+    </div>
+
+</section>
+<!-- =========================
+     CHAPTER 20 SECTION
+========================= -->
+
+<section class="scene scene-chapter" id="chapterScene">
+
+    <div class="chapter-content">
+
+        <p class="chapter-small">
+            A new chapter begins
+        </p>
+
+        <div class="chapter-number-wrap">
+
+            <span class="chapter-number">2</span>
+            <span class="chapter-number zero">0</span>
+
+        </div>
+
+        <h1 class="chapter-title">
+            Congratulations!!
+        </h1>
+
+        <p class="chapter-text">
+            Twenty looks good on you.
+        </p>
+
+        <p class="chapter-subtext">
+            May this chapter bring you moments<br>
+            worth remembering.
+        </p>
+
+        <button
+            class="chapter-button"
+            id="chapterContinueButton"
+        >
+            READ MY MESSAGE
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================
+     FINAL MESSAGE SECTION
+========================= -->
+
+<section class="scene scene-message" id="messageScene">
+
+    <div class="message-content">
+
+        <p class="message-kicker">
+            One last thing...
+        </p>
+
+        <h1 class="message-title">
+            There is something<br>
+            I wanted to tell you.
+        </h1>
+
+        <button
+            class="message-open-button"
+            id="messageOpenButton"
+        >
+            READ MY MESSAGE
+        </button>
+
+
+        <!-- LETTER -->
+
+        <div class="letter" id="letter">
+
+            <div class="letter-inner">
+
+                <p class="letter-greeting">
+                    To someone who became a very special part of my life,
+                </p>
+
+                <p>
+                    I don't know if I can put everything I feel into a few
+                    words, but I still wanted to make something that reminds
+                    you how special you are to me.
+                </p>
+
+                <p>
+                    We've had our good moments, our random conversations,
+                    our little memories, and even moments that weren't
+                    exactly perfect. But somehow, all of them became part
+                    of a story I'll always remember.
+                </p>
+
+                <p>
+                    You may not realize how much some of your smallest
+                    moments have meant to me. Sometimes just a conversation,
+                    a smile, or a simple moment with you could change the
+                    entire mood of my day.
+                </p>
+
+                <p>
+                    I don't know what the future chapters will look like,
+                    but I genuinely hope Chapter 20 brings you beautiful
+                    moments, peaceful days, unexpected happiness, and
+                    everything you deserve.
+                </p>
+
+                <p>
+                    Thank you for being someone I'll always be grateful
+                    to have met.
+                </p>
+
+                <p class="letter-ending">
+                    Once again, Happy 20th Birthday.
+                </p>
+
+                <p class="letter-final">
+                    May this new chapter be kinder, brighter,
+                    and more beautiful than the last.
+                </p>
+
+                <div class="letter-signature">
+                    Subiksha...
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL BUTTON -->
+
+        <button
+            class="message-final-button"
+            id="messageFinalButton"
+        >
+            ONE LAST SURPRISE
+        </button>
+
+    </div>
+
+</section>
+<section class="scene scene-final" id="finalScene">
+
+    <div class="final-sparkles" id="finalSparkles"></div>
+
+    <div class="final-content">
+
+        <div class="final-photo-wrap">
+            <div class="final-photo-glow"></div>
+
+            <img
+                src="memory-15.jpeg"
+                alt="A special memory"
+                class="final-photo"
+            >
+        </div>
+
+        <h1 class="final-title">
+            Happy 20th Birthday
+        </h1>
+
+        <p class="final-message">
+            You are very special to me.
+        </p>
+
+        <p class="final-small">
+            Always remember that.
+        </p>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <audio id="birthdayAudio" loop preload="auto">
+    <source src="birthday.mpeg" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+    
+    
+</body>
+
+</html>
